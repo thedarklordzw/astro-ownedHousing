@@ -1,8 +1,7 @@
-<html lang="en">
-	<head>
-		<title>Astro App</title>
-	</head>
-	<body>
-		<h1>My Astro website</h1>
-	</body>
-</html>
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Home Page";
+---
+<BaseLayout pageTitle={pageTitle}>
+  <h2>My awesome blog subtitle</h2>
+</BaseLayout>
